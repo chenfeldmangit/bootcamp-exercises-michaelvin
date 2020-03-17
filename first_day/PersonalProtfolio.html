@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML Final Exercise - Personal Protfolio">
+    <meta name="keywords" content="HTML">
+    <meta http-equiv="refresh" content="30">
+    <link rel="icon" href="sheep.jpg" type="image/icon type">
+    <title>Personal Portfolio</title>
+</head>
+<body>
+
+    <h1>Personal Portfolio</h1>
+
+    <div>
+        <h2>#1 CV</h2>
+        <h3>Me:</h3>
+        <img src="sheep.jpg" alt="Smiley face" height="100" width="100">
+        <h3>About me:</h3>
+        <h4>My heart is in front-end, and the rest of me at back-end</h4>
+
+        <h3>Career Timeline</h3>
+        <ul>
+            <li>1985 - Born</li>
+            <li>2006-2016 - A lot of Green</li>
+            <li>2019 - Gong</li>
+        </ul>
+
+        <h3>Special Hobbies</h3>
+        <ol>
+            <li>eat patisserie</li>
+            <li>binge</li>
+            <li>sleep</li>
+            <li>repeat</li>
+        </ol>
+
+    </div>
+
+
+    <div>
+        <h2>#2 Form to fill details for clients who wants to work with me</h2>
+        <form method="post">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="fnumber">Phone number:</label><br>
+            <input type="number" id="fnumber" name="fnumber"><br>
+
+            <br>
+
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br>
+
+            <h5>What car do you have?</h5>
+            <label for="cars"></label>
+            <select id="cars" name="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+
+            <br><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
+    <div>
+        <h2>#3 - Table of recommendations from previous colleges and friends</h2>
+        <table style="width:100%">
+            <tr>
+                <th>FullName</th>
+                <th>Age</th>
+                <th>Profile Image</th>
+                <th>List of Qualities</th>
+            </tr>
+            <tr>
+                <td>Shmulik Shnoll</td>
+                <td>100</td>
+                <td>
+                    <img src="shmul.webp" alt="Smul" height="70" width="70">
+                </td>
+                <td>
+                    <ul>
+                        <li>Young</li>
+                        <li>Eats meat</li>
+                        <li>Next guild head</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
