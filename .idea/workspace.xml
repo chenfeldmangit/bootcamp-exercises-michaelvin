@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0cc9929-46e7-4a79-8980-aac20dceeb37" name="Default Changelist" comment="" />
+    <list default="true" id="a0cc9929-46e7-4a79-8980-aac20dceeb37" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/second_day/PersonalProtfolio.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/second_day/PersonalProtfolio.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/second_day/Twitter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/second_day/Twitter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/second_day/picture.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/second_day/sheep.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/second_day/shmul.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/second_day/textual.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +25,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -29,7 +40,8 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/first_day" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/second_day" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -39,6 +51,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Michael\Documents\GitHub\bootcamp-exercises-michaelvin\second_day" />
       <recent name="C:\Users\Michael\Documents\GitHub\bootcamp-exercises-michaelvin\first_day" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -67,7 +80,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584431313167</updated>
-      <workItem from="1584431314787" duration="16360000" />
+      <workItem from="1584431314787" duration="17085000" />
+      <workItem from="1584516356860" duration="11482000" />
+      <workItem from="1584714098697" duration="21000000" />
+      <workItem from="1584820926840" duration="2926000" />
+      <workItem from="1584860225044" duration="307000" />
     </task>
     <task id="LOCAL-00001" summary="first exercise">
       <created>1584438454656</created>
@@ -157,7 +174,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
