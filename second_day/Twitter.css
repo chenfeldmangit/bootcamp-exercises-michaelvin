@@ -21,6 +21,7 @@ body {
 
 .center-container {
     flex-grow: 5;
+    position: relative;
 }
 
 .right-side-container {
@@ -72,14 +73,12 @@ body {
 
 .center-container-banner {
     border-style: solid;
-    position: fixed;
+    position: sticky;
+    top: 0;
     z-index: 99;
     background-color: white;
-    /*height: 50px;*/
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-
+    /*width: 100%;*/
+    margin: 0;
 }
 
 .tweet {
