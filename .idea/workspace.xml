@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0cc9929-46e7-4a79-8980-aac20dceeb37" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/second_day/PersonalProtfolio.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second_day/PersonalProtfolio.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second_day/Twitter.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second_day/Twitter.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second_day/picture.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second_day/sheep.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second_day/shmul.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second_day/textual.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/second_day/Twitter.css" beforeDir="false" afterPath="$PROJECT_DIR$/second_day/Twitter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/second_day/Twitter.html" beforeDir="false" afterPath="$PROJECT_DIR$/second_day/Twitter.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,11 +44,11 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Michael\Documents\GitHub\bootcamp-exercises-michaelvin\second_day" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Michael\Documents\GitHub\bootcamp-exercises-michaelvin\first_day" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Michael\Documents\GitHub\bootcamp-exercises-michaelvin\second_day" />
       <recent name="C:\Users\Michael\Documents\GitHub\bootcamp-exercises-michaelvin\first_day" />
     </key>
   </component>
@@ -84,7 +78,8 @@
       <workItem from="1584516356860" duration="11482000" />
       <workItem from="1584714098697" duration="21000000" />
       <workItem from="1584820926840" duration="2926000" />
-      <workItem from="1584860225044" duration="307000" />
+      <workItem from="1584860225044" duration="1155000" />
+      <workItem from="1584862937590" duration="2316000" />
     </task>
     <task id="LOCAL-00001" summary="first exercise">
       <created>1584438454656</created>
@@ -163,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584459913092</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="second day">
+      <created>1584860561270</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1584860561270</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +186,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first exercise" />
-    <option name="LAST_COMMIT_MESSAGE" value="first exercise" />
+    <MESSAGE value="second day" />
+    <option name="LAST_COMMIT_MESSAGE" value="second day" />
   </component>
 </project>
