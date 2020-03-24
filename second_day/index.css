@@ -72,17 +72,16 @@ body {
 /* center-container */
 
 .center-container-banner {
-    border-style: solid;
     position: sticky;
     top: 0;
     z-index: 99;
     background-color: white;
-    /*width: 100%;*/
     margin: 0;
 }
 
 .tweet {
     border-style: solid;
+    border-color: #F5F8FA;
 }
 
 .tweet-who {

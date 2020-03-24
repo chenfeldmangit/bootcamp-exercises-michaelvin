@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0cc9929-46e7-4a79-8980-aac20dceeb37" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/second_day/like.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/second_day/search.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/bootcamp-exercises-michaelvin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bootcamp-exercises-michaelvin.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/second_day/Twitter.css" beforeDir="false" afterPath="$PROJECT_DIR$/second_day/Twitter.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,10 +51,11 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Michael\Documents\GitHub\bootcamp-exercises-michaelvin\second_day" />
       <recent name="C:\Users\Michael\Documents\GitHub\bootcamp-exercises-michaelvin\first_day" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Michael\Documents\GitHub\bootcamp-exercises-michaelvin\second_day" />
       <recent name="C:\Users\Michael\Documents\GitHub\bootcamp-exercises-michaelvin\first_day" />
     </key>
@@ -83,7 +88,7 @@
       <workItem from="1584820926840" duration="2926000" />
       <workItem from="1584860225044" duration="1155000" />
       <workItem from="1584862937590" duration="3420000" />
-      <workItem from="1584983391781" duration="175000" />
+      <workItem from="1584983391781" duration="4355000" />
     </task>
     <task id="LOCAL-00001" summary="first exercise">
       <created>1584438454656</created>
@@ -183,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584982335345</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="second day">
+      <created>1584983609690</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1584983609690</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
