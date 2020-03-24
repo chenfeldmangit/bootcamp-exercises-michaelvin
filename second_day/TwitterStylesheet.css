@@ -18,7 +18,7 @@ body {
 }
 
 .center-container {
-    flex-grow: 5;
+    flex-grow: 3;
     position: relative;
 }
 
@@ -76,7 +76,7 @@ body {
 .center-container-banner {
     position: sticky;
     top: 0;
-    z-index: 99;
+    z-index: 1;
     background-color: white;
     margin: 0;
 }
@@ -101,9 +101,13 @@ body {
 .tweet-action-bar {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0 7em 0 5em;
     /*border-style: solid;*/
+}
+
+.tweet-action-bar-item {
+    width: 20px;
 }
 
 .virus-img2 {
@@ -179,7 +183,7 @@ body {
     width: 40px;
 }
 
-.follow-button {
+.follow-button, .edit-profile-button {
     border-radius: 20px;
     background-color: #F5F8FA;
     color: #1DA1F3;
