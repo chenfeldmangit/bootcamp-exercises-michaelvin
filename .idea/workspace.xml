@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0cc9929-46e7-4a79-8980-aac20dceeb37" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/second_day/like.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second_day/search.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/bootcamp-exercises-michaelvin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bootcamp-exercises-michaelvin.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_day/Twitter.css" beforeDir="false" afterPath="$PROJECT_DIR$/second_day/Twitter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/second_day/TwitterStylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/second_day/TwitterStylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/second_day/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/second_day/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +87,7 @@
       <workItem from="1584820926840" duration="2926000" />
       <workItem from="1584860225044" duration="1155000" />
       <workItem from="1584862937590" duration="3420000" />
-      <workItem from="1584983391781" duration="4355000" />
+      <workItem from="1584983391781" duration="5338000" />
     </task>
     <task id="LOCAL-00001" summary="first exercise">
       <created>1584438454656</created>
@@ -195,7 +194,21 @@
       <option name="project" value="LOCAL" />
       <updated>1584983609690</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="second day">
+      <created>1585041147424</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1585041147424</updated>
+    </task>
+    <task id="LOCAL-00017" summary="second day">
+      <created>1585041280356</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1585041280356</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
