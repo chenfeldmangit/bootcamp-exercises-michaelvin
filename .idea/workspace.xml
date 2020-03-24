@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0cc9929-46e7-4a79-8980-aac20dceeb37" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/second_day/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/bootcamp-exercises-michaelvin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bootcamp-exercises-michaelvin.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +85,7 @@
       <workItem from="1584820926840" duration="2926000" />
       <workItem from="1584860225044" duration="1155000" />
       <workItem from="1584862937590" duration="3420000" />
-      <workItem from="1584983391781" duration="5633000" />
+      <workItem from="1584983391781" duration="5890000" />
     </task>
     <task id="LOCAL-00001" summary="first exercise">
       <created>1584438454656</created>
@@ -227,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585042259013</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="second day">
+      <created>1585042343662</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1585042343662</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
