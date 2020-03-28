@@ -6,56 +6,56 @@
     <meta name="keywords" content="HTML">
     <!--    <meta http-equiv="refresh" content="30">-->
     <link rel="shortcut icon" href="/index.html/abs.twimg.com/favicons/twitter.ico" type="image/x-icon">
-    <link rel="stylesheet" href="second_day/TwitterStylesheet.css">
-    <script src="third_day/myscripts.js"></script>
+    <link rel="stylesheet" href="myTwitter/TwitterStylesheet.css">
+    <script src="myTwitter/MyScripts.js"></script>
     <title>MyTwitter (@MyTwitter)</title>
 </head>
 <body>
-    <div class="left-container">
+    <div id="left-container">
 
         <div class="menu-top">
-            <img src="second_day/virus.svg" alt="some virus" class="virus-img">
+            <img src="myTwitter/resources/virus.svg" alt="some virus" class="menu-button-img">
         </div>
 
         <div class="menu-buttons">
             <button class="menu-button">
-                <img src="second_day/virus.svg" alt="some virus" class="virus-img">
-                <label class="menu-label">Home</label>
+                <object class="menu-button-img" data="myTwitter/resources/home.svg"> </object>
+                <label class="menu-labels">Home</label>
             </button>
 
             <button class="menu-button">
-                <img src="second_day/virus.svg" alt="some virus" class="virus-img">
-                <label class="menu-label">Explore</label>
+                <img src="myTwitter/resources/virus.svg" alt="Explore" class="menu-button-img">
+                <label class="menu-labels">Explore</label>
             </button>
 
             <button class="menu-button">
-                <img src="second_day/virus.svg" alt="some virus" class="virus-img">
-                <label class="menu-label">Notifications</label>
+                <img src="myTwitter/resources/virus.svg" alt="Notifications" class="menu-button-img">
+                <label class="menu-labels">Notifications</label>
             </button>
 
             <button class="menu-button">
-                <img src="second_day/virus.svg" alt="some virus" class="virus-img">
-                <label class="menu-label">Messages</label>
+                <img src="myTwitter/resources/virus.svg" alt="Messages" class="menu-button-img">
+                <label class="menu-labels">Messages</label>
             </button>
 
             <button class="menu-button">
-                <img src="second_day/virus.svg" alt="some virus" class="virus-img">
-                <label class="menu-label">Bookmarks</label>
+                <img src="myTwitter/resources/virus.svg" alt="Bookmarks" class="menu-button-img">
+                <label class="menu-labels">Bookmarks</label>
             </button>
 
             <button class="menu-button">
-                <img src="second_day/virus.svg" alt="some virus" class="virus-img">
-                <label class="menu-label">Lists</label>
+                <img src="myTwitter/resources/virus.svg" alt="Lists" class="menu-button-img">
+                <label class="menu-labels">Lists</label>
             </button>
 
             <button class="menu-button" onclick="goToProfile()">
-                <img src="second_day/virus.svg" alt="some virus" class="virus-img">
-                <label class="menu-label">Profile</label>
+                <img src="myTwitter/resources/virus.svg" alt="Profile" class="menu-button-img">
+                <label class="menu-labels">Profile</label>
             </button>
 
             <button class="menu-button">
-                <img src="second_day/virus.svg" alt="some virus" class="virus-img">
-                <label class="menu-label">More</label>
+                <img src="myTwitter/resources/virus.svg" alt="More" class="menu-button-img">
+                <label class="menu-labels">More</label>
             </button>
         </div>
 
@@ -64,26 +64,33 @@
         </div>
 
         <template>
-            <div>
-                <div>
-                    <button class="menu-button" onclick="goBackToMainPage()">
-                        <img class="virus-img" src="third_day/left-arrow.svg" alt="back to main page">
-                    </button>
-                </div>
-                <div>
-                    <img class="profile-background">
-                </div>
-                <div>
+            <div class="show-profile">
+                <div class="show-profile-upper-line">
                     <div>
-                        <img class="profile-img">
+                        <button class="return-button" onclick="goBackToMainPage()">
+                            <object class="svgs" data="myTwitter/resources/back.svg"> </object>
+                        </button>
                     </div>
-                    <div>
-                        <button class="edit-profile-button">Edit profile</button>
+                    <div style="margin: 0 0 0 2em">
+                        <span class="profile-name"></span>
                     </div>
                 </div>
                 <div>
-                    <h2 class="name"></h2>
-                    <h2 class="id"></h2>
+                    <img id="profile-background" alt="profile-background">
+                </div>
+                <div class="show-profile-sub">
+                    <div>
+                        <img id="profile-img" alt="profile-img">
+                    </div>
+                    <div>
+                        <button class="edit-profile-button" onclick="editProfile()">Edit profile</button>
+                    </div>
+                </div>
+                <div>
+                    <span class="profile-name"></span><br>
+                    <span id="profile-id"></span><br>
+                    <span id="profile-bio"></span><br>
+                    <span id="profile-location"></span>
                 </div>
                 <div>
                     <h2>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
@@ -94,45 +101,26 @@
 
     </div>
 
-    <div class="center-container">
+    <div id="center-container">
         <!--        <div class="center-container-banner">-->
         <h1 class="center-container-banner">Home</h1>
         <!--        </div>-->
 
         <div class="user-tweet">
+            <div>
+                <img class="user-tweet-img" alt="" src="myTwitter/resources/shmul.webp">
+            </div>
+
+            <div>
+                <input type="text" name="input-twitte-box" placeholder="Twitte" class="user-tweet-input">
+            </div>
+
+            <div>
+                <button class="tweet-button user-tweet">Tweet</button>
+            </div>
 
         </div>
 
-        <div class="tweet">
-            <div class="tweet-who">
-
-            </div>
-            <div class="tweet-content">
-                Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
-                <img src="second_day/picture.jpg" alt="Picture" width="200px" height="200px">
-            </div>
-            <div class="tweet-action-bar">
-                <img src="second_day/speech-bubble.svg" alt="comment" class="tweet-action-bar-item">
-                <img src="second_day/repeat.svg" alt="retweet" class="tweet-action-bar-item">
-                <img src="second_day/heart.svg" alt="like" class="tweet-action-bar-item">
-                <img src="second_day/upload.svg" alt="upload" class="tweet-action-bar-item">
-            </div>
-        </div>
-        <div class="tweet">
-            <div class="tweet-who">
-
-            </div>
-            <div class="tweet-content">
-                Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
-                <img src="second_day/textual.jpg" alt="Textual" width="200px" height="200px">
-            </div>
-            <div class="tweet-action-bar">
-                <img src="second_day/speech-bubble.svg" alt="comment" class="tweet-action-bar-item">
-                <img src="second_day/repeat.svg" alt="retweet" class="tweet-action-bar-item">
-                <img src="second_day/heart.svg" alt="like" class="tweet-action-bar-item">
-                <img src="second_day/upload.svg" alt="upload" class="tweet-action-bar-item">
-            </div>
-        </div>
         <div class="tweet">
             <div class="tweet-who">
                 <div>
@@ -150,12 +138,13 @@
                         aria-hidden="false" tabindex="0"></iframe>
             </div>
             <div class="tweet-action-bar">
-                <img src="second_day/speech-bubble.svg" alt="comment" class="tweet-action-bar-item">
-                <img src="second_day/repeat.svg" alt="retweet" class="tweet-action-bar-item">
-                <img src="second_day/heart.svg" alt="like" class="tweet-action-bar-item">
-                <img src="second_day/upload.svg" alt="upload" class="tweet-action-bar-item">
+                <img src="myTwitter/resources/speech-bubble.svg" alt="comment" class="tweet-action-bar-item">
+                <img src="myTwitter/resources/repeat.svg" alt="retweet" class="tweet-action-bar-item">
+                <img src="myTwitter/resources/heart.svg" alt="like" class="tweet-action-bar-item">
+                <img src="myTwitter/resources/upload.svg" alt="upload" class="tweet-action-bar-item">
             </div>
         </div>
+
         <div class="tweet">
             <div class="tweet-who">
                 <div>
@@ -173,10 +162,42 @@
                         allowfullscreen></iframe>
             </div>
             <div class="tweet-action-bar">
-                <img src="second_day/speech-bubble.svg" alt="comment" class="tweet-action-bar-item">
-                <img src="second_day/repeat.svg" alt="retweet" class="tweet-action-bar-item">
-                <img src="second_day/heart.svg" alt="like" class="tweet-action-bar-item">
-                <img src="second_day/upload.svg" alt="upload" class="tweet-action-bar-item">
+                <img src="myTwitter/resources/speech-bubble.svg" alt="comment" class="tweet-action-bar-item">
+                <img src="myTwitter/resources/repeat.svg" alt="retweet" class="tweet-action-bar-item">
+                <img src="myTwitter/resources/heart.svg" alt="like" class="tweet-action-bar-item">
+                <img src="myTwitter/resources/upload.svg" alt="upload" class="tweet-action-bar-item">
+            </div>
+        </div>
+
+        <div class="tweet">
+            <div class="tweet-who">
+
+            </div>
+            <div class="tweet-content">
+                Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+                <img src="myTwitter/resources/picture.jpg" alt="Picture" width="200px" height="200px">
+            </div>
+            <div class="tweet-action-bar">
+                <img src="myTwitter/resources/speech-bubble.svg" alt="comment" class="tweet-action-bar-item">
+                <img src="myTwitter/resources/repeat.svg" alt="retweet" class="tweet-action-bar-item">
+                <img src="myTwitter/resources/heart.svg" alt="like" class="tweet-action-bar-item">
+                <img src="myTwitter/resources/upload.svg" alt="upload" class="tweet-action-bar-item">
+            </div>
+        </div>
+
+        <div class="tweet">
+            <div class="tweet-who">
+
+            </div>
+            <div class="tweet-content">
+                Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+                <img src="myTwitter/resources/textual.jpg" alt="Textual" width="200px" height="200px">
+            </div>
+            <div class="tweet-action-bar">
+                <img src="myTwitter/resources/speech-bubble.svg" alt="comment" class="tweet-action-bar-item">
+                <img src="myTwitter/resources/repeat.svg" alt="retweet" class="tweet-action-bar-item">
+                <img src="myTwitter/resources/heart.svg" alt="like" class="tweet-action-bar-item">
+                <img src="myTwitter/resources/upload.svg" alt="upload" class="tweet-action-bar-item">
             </div>
         </div>
 
@@ -188,22 +209,35 @@
                 Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
             </div>
             <div class="tweet-action-bar">
-                <img src="second_day/speech-bubble.svg" alt="comment" class="tweet-action-bar-item">
-                <img src="second_day/repeat.svg" alt="retweet" class="tweet-action-bar-item">
-                <img src="second_day/heart.svg" alt="like" class="tweet-action-bar-item">
-                <img src="second_day/upload.svg" alt="upload" class="tweet-action-bar-item">
+                <img src="myTwitter/resources/speech-bubble.svg" alt="comment" class="tweet-action-bar-item">
+                <img src="myTwitter/resources/repeat.svg" alt="retweet" class="tweet-action-bar-item">
+                <img src="myTwitter/resources/heart.svg" alt="like" class="tweet-action-bar-item">
+                <img src="myTwitter/resources/upload.svg" alt="upload" class="tweet-action-bar-item">
             </div>
         </div>
 
     </div>
 
-    <div class="right-container">
+    <div id="right-container">
 
-        <input type="text" name="search-twitter-box" placeholder="Search Twitter" class="search">
+        <input type="text" name="search-twitter-box" placeholder="      Search Twitter" class="search">
 
         <div class="trends">
             <div class="right-container-title">
                 <div class="right-container-title-text">Trends for you</div>
+                <div><img src="myTwitter/resources/gear.svg" alt="settings" class="menu-button-img"></div>
+            </div>
+            <div class="trend">
+                a Trend
+            </div>
+            <div class="trend">
+                a Trend
+            </div>
+            <div class="trend">
+                a Trend
+            </div>
+            <div class="right-container-title-text">
+                <a href="" rel="next" target="_blank">Show more</a>
             </div>
         </div>
 
@@ -214,7 +248,7 @@
             <div class="follow-object">
                 <div class="follow-object-sub">
                     <div>
-                        <img class="follow-object-img" alt="" src="second_day/shmul.webp">
+                        <img class="follow-object-img" alt="" src="myTwitter/resources/shmul.webp">
                     </div>
                     <div>
                         <strong>Shmulik knoll</strong> <br>
@@ -241,6 +275,54 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="dialog">
+        <dialog class="edit-profile">
+            <div class="edit-profile-control">
+                <div class="edit-profile-control-sub">
+                    <div>
+                        <button class="close-button" onclick="goBackFromEditProfileDialogToProfile()">
+                            <object class="svgs" data="myTwitter/resources/close.svg" > </object>
+                        </button>
+                    </div>
+                    <div style="margin: 0 0 0 2em">
+                        <strong>Edit profile</strong>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <input class="blue-style-button" type="button" value="Save" onclick="updateProfile('edit-profile-name', 'edit-profile-bio', 'edit-profile-location')">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img id="edit-profile-profile-background" alt="profile-background">
+            </div>
+            <div>
+                <img id="edit-profile-profile-img" alt="profile-img">
+            </div>
+            <div>
+                <form method="post" onsubmit="preventRefresh()">
+
+<!--                    <div class="edit-profile-input-container">-->
+<!--                        <label class="edit-profile-input-label" for="name">Name</label>-->
+<!--                        <input class="edit-profile-input" id="name" type="text" maxlength="5" oninput="validateNumberOfCharacters('edit-name-input-size', 'name')">-->
+<!--                    </div>-->
+<!--                    <label class="edit-profile-input-char-count" id="edit-name-input-size">0/5</label>-->
+
+                    <label for="edit-profile-name">Name</label><br>
+                    <input type="text" class="edit-profile-input" id="edit-profile-name" maxlength="5" oninput="validateNumberOfCharacters('edit-name-input-size', 'edit-profile-name')">
+                    <br><label class="edit-profile-input-char-count" id="edit-name-input-size">0/5</label><br><br>
+                    <label for="edit-profile-bio">Bio</label><br>
+                    <input type="text" class="edit-profile-input" id="edit-profile-bio" maxlength="160" oninput="validateNumberOfCharacters('edit-bio-input-size', 'edit-profile-bio')">
+                    <br><label class="edit-profile-input-char-count" id="edit-bio-input-size">0/160</label><br><br>
+                    <label for="edit-profile-location">Location</label><br>
+                    <input type="text" class="edit-profile-input" id="edit-profile-location" maxlength="30" oninput="validateNumberOfCharacters('edit-location-input-size', 'edit-profile-location')">
+                    <br><label class="edit-profile-input-char-count" id="edit-location-input-size">0/30</label><br><br>
+                </form>
+            </div>
+        </dialog>
     </div>
 
 </body>
