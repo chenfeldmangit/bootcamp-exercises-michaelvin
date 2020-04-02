@@ -5,12 +5,12 @@
     <meta name="description" content="Final Exercise - CSS Advanced Styling & Selectors">
     <meta name="keywords" content="HTML">
     <!--    <meta http-equiv="refresh" content="30">-->
-    <link rel="shortcut icon" href="/index.html/abs.twimg.com/favicons/twitter.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="myTwitter/resources/twitter.svg" type="image/x-icon">
     <link rel="stylesheet" href="myTwitter/TwitterStylesheet.css">
     <script src="myTwitter/MyScripts.js"></script>
     <title>MyTwitter (@MyTwitter)</title>
 </head>
-<body>
+<body onload="onLoad()">
     <div id="left-container">
 
         <div class="menu-top">
@@ -49,7 +49,7 @@
             </button>
 
             <button class="menu-button" onclick="goToProfile()">
-                <img src="myTwitter/resources/virus.svg" alt="Profile" class="menu-button-img">
+                <img src="myTwitter/resources/shmul.webp" alt="Profile" class="follow-object-img">
                 <label class="menu-labels">Profile</label>
             </button>
 
@@ -63,159 +63,171 @@
             <button class="tweet-button left-container">Tweet</button>
         </div>
 
-        <template>
-            <div class="show-profile">
-                <div class="show-profile-upper-line">
-                    <div>
-                        <button class="return-button" onclick="goBackToMainPage()">
-                            <object class="svgs" data="myTwitter/resources/back.svg"> </object>
-                        </button>
-                    </div>
-                    <div style="margin: 0 0 0 2em">
-                        <span class="profile-name"></span>
-                    </div>
-                </div>
-                <div>
-                    <img id="profile-background" alt="profile-background">
-                </div>
-                <div class="show-profile-sub">
-                    <div>
-                        <img id="profile-img" alt="profile-img">
-                    </div>
-                    <div>
-                        <button class="edit-profile-button" onclick="editProfile()">Edit profile</button>
-                    </div>
-                </div>
-                <div>
-                    <span class="profile-name"></span><br>
-                    <span id="profile-id"></span><br>
-                    <span id="profile-bio"></span><br>
-                    <span id="profile-location"></span>
-                </div>
-                <div>
-                    <h2>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-                        velit...</h2>
-                </div>
-            </div>
-        </template>
-
     </div>
 
     <div id="center-container">
-        <!--        <div class="center-container-banner">-->
-        <h1 class="center-container-banner">Home</h1>
-        <!--        </div>-->
+
+        <h1 class="center-container-sticky-banner">Home</h1>
 
         <div class="user-tweet">
-            <div>
-                <img class="user-tweet-img" alt="" src="myTwitter/resources/shmul.webp">
-            </div>
-
-            <div>
-                <input type="text" name="input-twitte-box" placeholder="Twitte" class="user-tweet-input">
-            </div>
-
-            <div>
-                <button class="tweet-button user-tweet">Tweet</button>
-            </div>
-
-        </div>
-
-        <div class="tweet">
-            <div class="tweet-who">
+            <div class="user-tweet-tweet-raw">
                 <div>
-                    <img class="follow-object-img" alt=""
-                         src="https://pbs.twimg.com/profile_images/664849888925065217/tVaCCUG-_400x400.jpg">
+                    <img class="user-tweet-img" alt="" src="myTwitter/resources/shmul.webp">
                 </div>
+
                 <div>
-                    <strong>Pierre Hermé Paris</strong>@PierreHerme
+<!--                    <input type="text" id="user-tweet-input" name="input-twitte-box" placeholder="What's happening?" size="280" maxlength="280">-->
+                    <textarea id="user-tweet-input" name="input-twitte-box" cols="140" rows="5" maxlength="280" placeholder="What's happening?"></textarea>
                 </div>
             </div>
-            <div class="tweet-content">
-                Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7316.781871859208!2d2.327280031741342!3d48.867744315482575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2de41aaaab%3A0x8a942e50c2ef3381!2sLa%20P%C3%A2tisserie%20du%20Meurice%20par%20C%C3%A9dric%20Grolet!5e0!3m2!1sen!2sil!4v1584451551681!5m2!1sen!2sil"
-                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
-                        aria-hidden="false" tabindex="0"></iframe>
-            </div>
-            <div class="tweet-action-bar">
-                <img src="myTwitter/resources/speech-bubble.svg" alt="comment" class="tweet-action-bar-item">
-                <img src="myTwitter/resources/repeat.svg" alt="retweet" class="tweet-action-bar-item">
-                <img src="myTwitter/resources/heart.svg" alt="like" class="tweet-action-bar-item">
-                <img src="myTwitter/resources/upload.svg" alt="upload" class="tweet-action-bar-item">
-            </div>
-        </div>
 
-        <div class="tweet">
-            <div class="tweet-who">
+            <div class="user-tweet-action-bar">
                 <div>
-                    <img class="follow-object-img" alt=""
-                         src="https://pbs.twimg.com/profile_images/1133109643734130688/BwioAwkz_400x400.jpg">
                 </div>
                 <div>
-                    <strong>Rihanna</strong>@rihanna
+                    <button class="tweet-button" onclick="addTweet('user-tweet-input')">Tweet</button>
                 </div>
             </div>
-            <div class="tweet-content">
-                Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/B3eAMGXFw1o" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-            </div>
-            <div class="tweet-action-bar">
-                <img src="myTwitter/resources/speech-bubble.svg" alt="comment" class="tweet-action-bar-item">
-                <img src="myTwitter/resources/repeat.svg" alt="retweet" class="tweet-action-bar-item">
-                <img src="myTwitter/resources/heart.svg" alt="like" class="tweet-action-bar-item">
-                <img src="myTwitter/resources/upload.svg" alt="upload" class="tweet-action-bar-item">
-            </div>
+
         </div>
 
-        <div class="tweet">
-            <div class="tweet-who">
+        <div class="tweets">
 
+            <div class="tweet">
+                <div class="tweet-who">
+                    <div>
+                        <img class="follow-object-img" alt=""
+                             src="https://pbs.twimg.com/profile_images/664849888925065217/tVaCCUG-_400x400.jpg">
+                    </div>
+                    <div>
+                        <strong>Pierre Hermé Paris</strong>@PierreHerme
+                    </div>
+                </div>
+                <div class="tweet-content">
+                    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7316.781871859208!2d2.327280031741342!3d48.867744315482575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2de41aaaab%3A0x8a942e50c2ef3381!2sLa%20P%C3%A2tisserie%20du%20Meurice%20par%20C%C3%A9dric%20Grolet!5e0!3m2!1sen!2sil!4v1584451551681!5m2!1sen!2sil"
+                            width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="tweet-action-bar">
+                    <button class="tweet-action-bar-button" onclick="">
+                        <img src="myTwitter/resources/speech-bubble.svg" alt="comment" class="tweet-action-bar-button-img">
+                    </button>
+                    <button class="tweet-action-bar-button" onclick="">
+                        <img src="myTwitter/resources/repeat.svg" alt="retweet" class="tweet-action-bar-button-img">
+                    </button>
+                    <button class="tweet-action-bar-button" onclick="likeTweet()">
+                        <img src="myTwitter/resources/heart.svg" alt="like" class="tweet-action-bar-button-img">
+                    </button>
+                    <button class="tweet-action-bar-button" onclick="">
+                        <img src="myTwitter/resources/upload.svg" alt="upload" class="tweet-action-bar-button-img">
+                    </button>
+                </div>
             </div>
-            <div class="tweet-content">
-                Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
-                <img src="myTwitter/resources/picture.jpg" alt="Picture" width="200px" height="200px">
+
+            <div class="tweet">
+                <div class="tweet-who">
+                    <div>
+                        <img class="follow-object-img" alt=""
+                             src="https://pbs.twimg.com/profile_images/1133109643734130688/BwioAwkz_400x400.jpg">
+                    </div>
+                    <div>
+                        <strong>Rihanna</strong>@rihanna
+                    </div>
+                </div>
+                <div class="tweet-content">
+                    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/B3eAMGXFw1o" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </div>
+                <div class="tweet-action-bar">
+                    <button class="tweet-action-bar-button" onclick="">
+                        <img src="myTwitter/resources/speech-bubble.svg" alt="comment" class="tweet-action-bar-button-img">
+                    </button>
+                    <button class="tweet-action-bar-button" onclick="">
+                        <img src="myTwitter/resources/repeat.svg" alt="retweet" class="tweet-action-bar-button-img">
+                    </button>
+                    <button class="tweet-action-bar-button" onclick="likeTweet()">
+                        <img src="myTwitter/resources/heart.svg" alt="like" class="tweet-action-bar-button-img">
+                    </button>
+                    <button class="tweet-action-bar-button" onclick="">
+                        <img src="myTwitter/resources/upload.svg" alt="upload" class="tweet-action-bar-button-img">
+                    </button>
+                </div>
             </div>
-            <div class="tweet-action-bar">
-                <img src="myTwitter/resources/speech-bubble.svg" alt="comment" class="tweet-action-bar-item">
-                <img src="myTwitter/resources/repeat.svg" alt="retweet" class="tweet-action-bar-item">
-                <img src="myTwitter/resources/heart.svg" alt="like" class="tweet-action-bar-item">
-                <img src="myTwitter/resources/upload.svg" alt="upload" class="tweet-action-bar-item">
+
+            <div class="tweet">
+                <div class="tweet-who">
+
+                </div>
+                <div class="tweet-content">
+                    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+                    <img src="myTwitter/resources/picture.jpg" alt="Picture" width="200px" height="200px">
+                    <div class="tweet-action-bar">
+                        <button class="tweet-action-bar-button" onclick="">
+                            <img src="myTwitter/resources/speech-bubble.svg" alt="comment" class="tweet-action-bar-button-img">
+                        </button>
+                        <button class="tweet-action-bar-button" onclick="">
+                            <img src="myTwitter/resources/repeat.svg" alt="retweet" class="tweet-action-bar-button-img">
+                        </button>
+                        <button class="tweet-action-bar-button" onclick="likeTweet()">
+                            <img src="myTwitter/resources/heart.svg" alt="like" class="tweet-action-bar-button-img">
+                        </button>
+                        <button class="tweet-action-bar-button" onclick="">
+                            <img src="myTwitter/resources/upload.svg" alt="upload" class="tweet-action-bar-button-img">
+                        </button>
+                    </div>
+                </div>
             </div>
+
+            <div class="tweet">
+                <div class="tweet-who">
+
+                </div>
+                <div class="tweet-content">
+                    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+                    <img src="myTwitter/resources/textual.jpg" alt="Textual" width="200px" height="200px">
+                    <div class="tweet-action-bar">
+                        <button class="tweet-action-bar-button" onclick="">
+                            <img src="myTwitter/resources/speech-bubble.svg" alt="comment" class="tweet-action-bar-button-img">
+                        </button>
+                        <button class="tweet-action-bar-button" onclick="">
+                            <img src="myTwitter/resources/repeat.svg" alt="retweet" class="tweet-action-bar-button-img">
+                        </button>
+                        <button class="tweet-action-bar-button" onclick="likeTweet()">
+                            <img src="myTwitter/resources/heart.svg" alt="like" class="tweet-action-bar-button-img">
+                        </button>
+                        <button class="tweet-action-bar-button" onclick="">
+                            <img src="myTwitter/resources/upload.svg" alt="upload" class="tweet-action-bar-button-img">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tweet">
+                <div class="tweet-who">
+
+                </div>
+                <div class="tweet-content">
+                    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+                    <div class="tweet-action-bar">
+                        <button class="tweet-action-bar-button" onclick="">
+                            <img src="myTwitter/resources/speech-bubble.svg" alt="comment" class="tweet-action-bar-button-img">
+                        </button>
+                        <button class="tweet-action-bar-button" onclick="">
+                            <img src="myTwitter/resources/repeat.svg" alt="retweet" class="tweet-action-bar-button-img">
+                        </button>
+                        <button class="tweet-action-bar-button" onclick="likeTweet()">
+                            <img src="myTwitter/resources/heart.svg" alt="like" class="tweet-action-bar-button-img">
+                        </button>
+                        <button class="tweet-action-bar-button" onclick="">
+                            <img src="myTwitter/resources/upload.svg" alt="upload" class="tweet-action-bar-button-img">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
         </div>
-
-        <div class="tweet">
-            <div class="tweet-who">
-
-            </div>
-            <div class="tweet-content">
-                Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
-                <img src="myTwitter/resources/textual.jpg" alt="Textual" width="200px" height="200px">
-            </div>
-            <div class="tweet-action-bar">
-                <img src="myTwitter/resources/speech-bubble.svg" alt="comment" class="tweet-action-bar-item">
-                <img src="myTwitter/resources/repeat.svg" alt="retweet" class="tweet-action-bar-item">
-                <img src="myTwitter/resources/heart.svg" alt="like" class="tweet-action-bar-item">
-                <img src="myTwitter/resources/upload.svg" alt="upload" class="tweet-action-bar-item">
-            </div>
-        </div>
-
-        <div class="tweet">
-            <div class="tweet-who">
-
-            </div>
-            <div class="tweet-content">
-                Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
-            </div>
-            <div class="tweet-action-bar">
-                <img src="myTwitter/resources/speech-bubble.svg" alt="comment" class="tweet-action-bar-item">
-                <img src="myTwitter/resources/repeat.svg" alt="retweet" class="tweet-action-bar-item">
-                <img src="myTwitter/resources/heart.svg" alt="like" class="tweet-action-bar-item">
-                <img src="myTwitter/resources/upload.svg" alt="upload" class="tweet-action-bar-item">
-            </div>
-        </div>
-
     </div>
 
     <div id="right-container">
@@ -227,13 +239,13 @@
                 <div class="right-container-title-text">Trends for you</div>
                 <div><img src="myTwitter/resources/gear.svg" alt="settings" class="menu-button-img"></div>
             </div>
-            <div class="trend">
+            <div class="trend-object">
                 a Trend
             </div>
-            <div class="trend">
+            <div class="trend-object">
                 a Trend
             </div>
-            <div class="trend">
+            <div class="trend-object">
                 a Trend
             </div>
             <div class="right-container-title-text">
@@ -274,8 +286,78 @@
                     <button class="follow-button">Follow</button>
                 </div>
             </div>
+            <div style="height: 10px">
+
+            </div>
         </div>
     </div>
+
+    <template id="profile-container">
+        <div class="show-profile">
+            <div class="show-profile-upper-line">
+                <div>
+                    <button class="return-button" onclick="goBackToMainPage()">
+                        <object class="svgs" data="myTwitter/resources/back.svg"> </object>
+                    </button>
+                </div>
+                <div style="margin: 0 0 0 2em">
+                    <span class="profile-name"></span>
+                </div>
+            </div>
+            <div>
+                <img id="profile-background" alt="profile-background">
+            </div>
+            <div class="show-profile-sub">
+                <div>
+                    <img id="profile-img" alt="profile-img">
+                </div>
+                <div>
+                    <button class="edit-profile-button" onclick="editProfile()">Edit profile</button>
+                </div>
+            </div>
+            <div>
+                <span class="profile-name"></span><br>
+                <span id="profile-id"></span><br>
+                <span id="profile-bio"></span><br>
+                <span id="profile-location"></span>
+            </div>
+            <div>
+                <h2>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                    velit...</h2>
+            </div>
+        </div>
+    </template>
+
+    <template class="tweet-template" id="">
+        <div class="tweet-who">
+            <div>
+                <img class="follow-object-img" alt=""
+                     src="https://pbs.twimg.com/profile_images/664849888925065217/tVaCCUG-_400x400.jpg">
+            </div>
+            <div>
+                <strong>Pierre Hermé Paris</strong>@PierreHerme
+            </div>
+        </div>
+        <div class="tweet-content">
+            Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7316.781871859208!2d2.327280031741342!3d48.867744315482575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2de41aaaab%3A0x8a942e50c2ef3381!2sLa%20P%C3%A2tisserie%20du%20Meurice%20par%20C%C3%A9dric%20Grolet!5e0!3m2!1sen!2sil!4v1584451551681!5m2!1sen!2sil"
+                    width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="tweet-action-bar">
+            <button class="tweet-action-bar-button" onclick="">
+                <img src="myTwitter/resources/speech-bubble.svg" alt="comment" class="tweet-action-bar-button-img">
+            </button>
+            <button class="tweet-action-bar-button" onclick="">
+                <img src="myTwitter/resources/repeat.svg" alt="retweet" class="tweet-action-bar-button-img">
+            </button>
+            <button class="tweet-action-bar-button" onclick="likeTweet()">
+                <img src="myTwitter/resources/heart.svg" alt="like" class="tweet-action-bar-button-img">
+            </button>
+            <button class="tweet-action-bar-button" onclick="">
+                <img src="myTwitter/resources/upload.svg" alt="upload" class="tweet-action-bar-button-img">
+            </button>
+        </div>
+    </template>
 
     <div class="dialog">
         <dialog class="edit-profile">
@@ -312,13 +394,13 @@
 <!--                    <label class="edit-profile-input-char-count" id="edit-name-input-size">0/5</label>-->
 
                     <label for="edit-profile-name">Name</label><br>
-                    <input type="text" class="edit-profile-input" id="edit-profile-name" maxlength="5" oninput="validateNumberOfCharacters('edit-name-input-size', 'edit-profile-name')">
+                    <input type="text" class="edit-profile-input" id="edit-profile-name" maxlength="5" oninput="showNumberOfCharactersInserted('edit-name-input-size', 'edit-profile-name')">
                     <br><label class="edit-profile-input-char-count" id="edit-name-input-size">0/5</label><br><br>
                     <label for="edit-profile-bio">Bio</label><br>
-                    <input type="text" class="edit-profile-input" id="edit-profile-bio" maxlength="160" oninput="validateNumberOfCharacters('edit-bio-input-size', 'edit-profile-bio')">
+                    <input type="text" class="edit-profile-input" id="edit-profile-bio" maxlength="160" oninput="showNumberOfCharactersInserted('edit-bio-input-size', 'edit-profile-bio')">
                     <br><label class="edit-profile-input-char-count" id="edit-bio-input-size">0/160</label><br><br>
                     <label for="edit-profile-location">Location</label><br>
-                    <input type="text" class="edit-profile-input" id="edit-profile-location" maxlength="30" oninput="validateNumberOfCharacters('edit-location-input-size', 'edit-profile-location')">
+                    <input type="text" class="edit-profile-input" id="edit-profile-location" maxlength="30" oninput="showNumberOfCharactersInserted('edit-location-input-size', 'edit-profile-location')">
                     <br><label class="edit-profile-input-char-count" id="edit-location-input-size">0/30</label><br><br>
                 </form>
             </div>
