@@ -5,9 +5,11 @@
       <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_day/TwitterStylesheet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/third_day/left-arrow.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/third_day/myscripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myTwitter/MyScripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/myTwitter/MyScripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myTwitter/TwitterStylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/myTwitter/TwitterStylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myTwitter/resources/gear.svg" beforeDir="false" afterPath="$PROJECT_DIR$/myTwitter/resources/gear.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myTwitter/resources/search.svg" beforeDir="false" afterPath="$PROJECT_DIR$/myTwitter/resources/search.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myTwitter/resources/twitter.svg" beforeDir="false" afterPath="$PROJECT_DIR$/myTwitter/resources/twitter.svg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +46,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/second_day" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -94,7 +96,14 @@
       <workItem from="1584862937590" duration="3420000" />
       <workItem from="1584983391781" duration="25413000" />
       <workItem from="1585119428671" duration="889000" />
-      <workItem from="1585387477928" duration="21074000" />
+      <workItem from="1585387477928" duration="21531000" />
+      <workItem from="1585463114469" duration="811000" />
+      <workItem from="1585636375892" duration="21795000" />
+      <workItem from="1585737686444" duration="642000" />
+      <workItem from="1585738402157" duration="370000" />
+      <workItem from="1585809218307" duration="12086000" />
+      <workItem from="1586071402138" duration="633000" />
+      <workItem from="1586508407737" duration="4206000" />
     </task>
     <task id="LOCAL-00001" summary="first exercise">
       <created>1584438454656</created>
@@ -278,7 +287,21 @@
       <option name="project" value="LOCAL" />
       <updated>1585057246796</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="third day">
+      <created>1585409301982</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1585409301982</updated>
+    </task>
+    <task id="LOCAL-00028" summary="third day">
+      <created>1585809278533</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1585809278533</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

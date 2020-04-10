@@ -13,48 +13,50 @@
 <body onload="onLoad()">
     <div id="left-container">
 
-        <div class="menu-top">
-            <img src="myTwitter/resources/virus.svg" alt="some virus" class="menu-button-img">
+        <div id="menu-top">
+            <object class="menu-button-img" data="myTwitter/resources/twitter.svg"> </object>
         </div>
 
-        <div class="menu-buttons">
+        <div id="menu-buttons">
             <button class="menu-button">
                 <object class="menu-button-img" data="myTwitter/resources/home.svg"> </object>
                 <label class="menu-labels">Home</label>
             </button>
 
             <button class="menu-button">
-                <img src="myTwitter/resources/virus.svg" alt="Explore" class="menu-button-img">
+                <object class="menu-button-img" data="myTwitter/resources/hashtag.svg"> </object>
+<!--                <img src="myTwitter/resources/hashtag.svg" alt="Explore" class="menu-button-img">-->
                 <label class="menu-labels">Explore</label>
             </button>
 
             <button class="menu-button">
-                <img src="myTwitter/resources/virus.svg" alt="Notifications" class="menu-button-img">
+                <object class="menu-button-img" data="myTwitter/resources/bell.svg"> </object>
+<!--                <img src="myTwitter/resources/bell.svg" alt="Notifications" class="menu-button-img">-->
                 <label class="menu-labels">Notifications</label>
             </button>
 
             <button class="menu-button">
-                <img src="myTwitter/resources/virus.svg" alt="Messages" class="menu-button-img">
+                <img src="myTwitter/resources/mail.svg" alt="Messages" class="menu-button-img">
                 <label class="menu-labels">Messages</label>
             </button>
 
             <button class="menu-button">
-                <img src="myTwitter/resources/virus.svg" alt="Bookmarks" class="menu-button-img">
+                <img src="myTwitter/resources/bookmark.svg" alt="Bookmarks" class="menu-button-img">
                 <label class="menu-labels">Bookmarks</label>
             </button>
 
             <button class="menu-button">
-                <img src="myTwitter/resources/virus.svg" alt="Lists" class="menu-button-img">
+                <img src="myTwitter/resources/clipboard.svg" alt="Lists" class="menu-button-img">
                 <label class="menu-labels">Lists</label>
             </button>
 
             <button class="menu-button" onclick="goToProfile()">
-                <img src="myTwitter/resources/shmul.webp" alt="Profile" class="follow-object-img">
+                <img src="myTwitter/resources/shmul.webp" alt="Profile" id="left-menu-profile-img">
                 <label class="menu-labels">Profile</label>
             </button>
 
             <button class="menu-button">
-                <img src="myTwitter/resources/virus.svg" alt="More" class="menu-button-img">
+                <img src="myTwitter/resources/more.svg" alt="More" class="menu-button-img">
                 <label class="menu-labels">More</label>
             </button>
         </div>
@@ -67,9 +69,9 @@
 
     <div id="center-container">
 
-        <h1 class="center-container-sticky-banner">Home</h1>
+        <h1 id="center-container-sticky-banner">Home</h1>
 
-        <div class="user-tweet">
+        <div id="user-tweet">
             <div class="user-tweet-tweet-raw">
                 <div>
                     <img class="user-tweet-img" alt="" src="myTwitter/resources/shmul.webp">
@@ -91,7 +93,7 @@
 
         </div>
 
-        <div class="tweets">
+        <div id="tweets">
 
             <div class="tweet">
                 <div class="tweet-who">
@@ -232,11 +234,16 @@
 
     <div id="right-container">
 
-        <input type="text" name="search-twitter-box" placeholder="      Search Twitter" class="search">
+        <div id="search">
+            <label>
+                <input type="text" name="search-twitter-box" placeholder="      Search Twitter" id="search-input">
+            </label>
+        </div>
 
-        <div class="trends">
-            <div class="right-container-title">
-                <div class="right-container-title-text">Trends for you</div>
+        <div id="trends">
+            <div id="right-container-title">
+                <div id="right-container-title-text">Trends for you</div>
+<!--                <div><object class="svgs" data="myTwitter/resources/gear.svg"> </object></div>-->
                 <div><img src="myTwitter/resources/gear.svg" alt="settings" class="menu-button-img"></div>
             </div>
             <div class="trend-object">
@@ -253,7 +260,7 @@
             </div>
         </div>
 
-        <div class="follow">
+        <div id="follow">
             <div class="right-container-title">
                 <div class="right-container-title-text">Who to follow</div>
             </div>
@@ -319,6 +326,7 @@
                 <span class="profile-name"></span><br>
                 <span id="profile-id"></span><br>
                 <span id="profile-bio"></span><br>
+                <object id="show-profile-location-pin" class="svgs" data="myTwitter/resources/pin.svg"></object>
                 <span id="profile-location"></span>
             </div>
             <div>

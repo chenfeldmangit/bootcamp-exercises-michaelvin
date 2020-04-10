@@ -174,7 +174,7 @@ function addTweet(tweetInputBoxId) {
 function createTweetId() {
     let nextTweetId = parseInt(localStorage.getItem("idEnumerator"), 10) + 1;
     localStorage.setItem("idEnumerator", nextTweetId.toString());
-    return "#" + nextTweetId;
+    return "#tweet-" + nextTweetId;
 }
 
 function likeTweet(tweetInputBoxId) {
