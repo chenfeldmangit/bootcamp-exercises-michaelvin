@@ -7,9 +7,7 @@
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myTwitter/MyScripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/myTwitter/MyScripts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myTwitter/TwitterStylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/myTwitter/TwitterStylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myTwitter/resources/gear.svg" beforeDir="false" afterPath="$PROJECT_DIR$/myTwitter/resources/gear.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myTwitter/resources/search.svg" beforeDir="false" afterPath="$PROJECT_DIR$/myTwitter/resources/search.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myTwitter/resources/twitter.svg" beforeDir="false" afterPath="$PROJECT_DIR$/myTwitter/resources/twitter.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myTwitter/resources/heart.svg" beforeDir="false" afterPath="$PROJECT_DIR$/myTwitter/resources/heart.svg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +101,7 @@
       <workItem from="1585738402157" duration="370000" />
       <workItem from="1585809218307" duration="12086000" />
       <workItem from="1586071402138" duration="633000" />
-      <workItem from="1586508407737" duration="4206000" />
+      <workItem from="1586508407737" duration="38561000" />
     </task>
     <task id="LOCAL-00001" summary="first exercise">
       <created>1584438454656</created>
@@ -301,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585809278533</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="third day">
+      <created>1586512837277</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1586512837277</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
