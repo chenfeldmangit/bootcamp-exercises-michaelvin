@@ -5,6 +5,8 @@
       <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myTwitter/MyScripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/myTwitter/MyScripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myTwitter/TwitterStylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/myTwitter/TwitterStylesheet.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +100,8 @@
       <workItem from="1585738402157" duration="370000" />
       <workItem from="1585809218307" duration="12086000" />
       <workItem from="1586071402138" duration="633000" />
-      <workItem from="1586508407737" duration="40029000" />
+      <workItem from="1586508407737" duration="47363000" />
+      <workItem from="1586716212830" duration="2902000" />
     </task>
     <task id="LOCAL-00001" summary="first exercise">
       <created>1584438454656</created>
@@ -310,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586618138826</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="third day">
+      <created>1586619405973</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1586619405973</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,5 +344,16 @@
     <MESSAGE value="second day" />
     <MESSAGE value="third day" />
     <option name="LAST_COMMIT_MESSAGE" value="third day" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/index.html</url>
+          <line>53</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

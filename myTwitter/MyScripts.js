@@ -236,8 +236,18 @@ function likeTweet(event) {
     let tweetList = TweetList.fromJson(jsonTweetList);
     let tweet = tweetList.getTweetById(event.target.closest(".tweet").getAttribute("id"));
     tweet.isLiked = !tweet.isLiked;
-    // tweet.isLiked ? event.target.children[0].classList.add("liked") : event.target.children[0].classList.remove("liked");
     tweet.isLiked ? event.target.classList.add("liked") : event.target.classList.remove("liked");
     // event.target.children[0].setAttribute("data", "myTwitter/resources/"+ (tweet.isLiked ? "heart-full.svg" : "heart.svg"));
     localStorage.setItem("tweetList", JSON.stringify(tweetList.tweets));
+}
+
+function removeTweet(event) {
+    let jsonTweetList = JSON.parse(localStorage.getItem("tweetList"));
+    let tweetList = TweetList.fromJson(jsonTweetList);
+    console.log(event.target.closest(".tweet"));
+    alert(event.target.closest(".tweet").getAttribute("id"));
+    tweetList.removeTweetById(event.target.closest(".tweet").getAttribute("id"));
+    localStorage.setItem("tweetList", JSON.stringify(tweetList.tweets));
+
+    loadTweets();
 }
